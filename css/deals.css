@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.deals{
+    border-top: 2px solid;
+}
+#header{
+     height: 90px;
+     width: 100%;
+     background-color: #22b3c1;
+     padding-top: 10px;
+     /* display: flex;
+     justify-content:flex-start; */
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
+#bar{
+    display: none;
+}
+@media (max-width:1000px){
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        gap: 10px;
+        top: 60px;
+        right: -300px;
+        height: 40vh;
+        width: 200px;
+        background-color: grey;
+        box-shadow: 0 40px 60px rgba(0,0,0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: all 0.2s;
+    }
+    #bar{
+        display: inline;
+    }
+}
+.nav h3{
+    font-size: 30px;
+}
+a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.753);
+}
+#search-bar{
+    height: 25px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    text-indent: 10px;
+}
+.description{
+    /* height: 40vh; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: red; */
+}
+.hidden-content {
+    width: 95%;
+    /* border: 2px solid; */
+    /* box-shadow: 2px 2px 2px black; */
+    padding: 15px;
+    max-height: 100px; /* Set a maximum height for the content */
+    overflow: hidden; /* Hide any content that overflows the maximum height */
+    transition: max-height 2s ease-out; /* Add a transition effect when showing/hiding the content */
+  }
+
+  .hidden-content.expanded {
+    max-height: none; /* Show all the content when the "Read More" button is clicked */
+  }
+
+  .read-more {
+    display: block; /* Make the button a block element to take up the full width */
+    margin-top: 10px; /* Add some space between the content and the button */
+    padding: 5px 10px; /* Add some padding to the button */
+    background-color: #f00; /* Set the background color of the button */
+    color: #fff; /* Set the text color of the button */
+    border: none; /* Remove the border from the button */
+    border-radius: 5px; /* Round the corners of the button */
+    cursor: pointer; /* Add a pointer cursor when hovering over the button */
+  }
+
+  .read-more:hover {
+    background-color: #800; /* Change the background color of the button on hover */
+  }
+  .table{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  table {
+    width:90% ;
+    margin: 5px;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }

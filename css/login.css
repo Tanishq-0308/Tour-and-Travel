@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.login{
+    border-top: 2px solid;
+}
+#header{
+     height: 90px;
+     width: 100%;
+     background-color: #22b3c1;
+     padding-top: 10px;
+     /* display: flex;
+     justify-content:flex-start; */
+}
+#bar{
+    display: none;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
+@media (max-width:1000px){
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        gap: 10px;
+        top: 60px;
+        right: -300px;
+        height: 40vh;
+        width: 200px;
+        background-color: grey;
+        box-shadow: 0 40px 60px rgba(0,0,0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: all 0.2s;
+    }
+    #bar{
+        display: inline;
+    }
+}
+.nav h3{
+    font-size: 30px;
+}
+a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.753);
+}
+#search-bar{
+    height: 25px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    text-indent: 10px;
+}
+.main{
+    height: 88.3vh;
+    width: 100%;
+    background-image: url(about.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.window{
+    height: 280px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.356);
+    /* -webkit-backdrop-filter:opacity(40%); */
+    /* text-align: center; */
+    /* padding: 10px; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+#username,#password{
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    text-indent: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+#password{
+    margin-bottom: 8px;
+}
+#login{
+    height: 35px;
+    width: 150px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+}
+#login:hover{
+    color: green;
+    background-color: white;
+}
+#visible{
+    padding: 10px;
+}
