@@ -15,7 +15,10 @@ let counter=0;
 slide.forEach(
     (slide,index)=>{
         slide.style.left=`${index * 100}%`;
-    }
+    },
+    setInterval(() => {
+        next()
+    }, 3000)
 )
 
 function previous(){
@@ -32,9 +35,10 @@ function next(){
         counter++;
     slideImage()
     }
-    
+    else if(counter==slide.length-1){
+        counter=-1;
+    }
 }
-
 const slideImage=()=>{
     slide.forEach(
         (slide)=>{
