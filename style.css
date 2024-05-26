@@ -51,12 +51,14 @@
 .nav h3{
     font-size: 30px;
 }
-a{
+.navigation{
     margin-left: 30px;
-    text-decoration: none;
     color: white;
 }
-a:hover{
+a{
+    text-decoration: none;
+}
+.navigation:hover{
     color: rgba(255, 255, 255, 0.753);
 }
 #search-bar{
@@ -110,6 +112,7 @@ a:hover{
     color: #22b3c1;
     background-color: transparent;
     border-radius: 15px;
+    transition: all .5s;
 }
 .discover-more:hover{
     color: white;
@@ -131,10 +134,149 @@ a:hover{
     height: 100%;
 }
 .page2{
-    background-color: aqua;
-    height: 150vh;
+    background-color: rgba(0, 0, 0, 0.329);
+    height: 170vh;
+}
+.places{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.places-heading{
+    text-align: center;
+    margin-top: 40px;
+}
+.cards{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    padding: 50px;
+}
+.card{
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card-head{
+    color: black;
+}
+.card-head:hover{
+    color: rgba(0, 0, 0, 0.603);
+}
+.card2-details{
+    text-align: center;
+}
+.img-container{
+    position: relative;
+    height: 150px;
+}
+.card_image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.explore-places > a > button{
+    font-size: 30px;
+    width: 60vw;
+    border:2px solid #14336d;
+    padding: 10px;
+    color: #14336d;
+    margin-bottom: 40px;
+    transition: all .5s;
+}
+.explore-places > a > button:hover{
+    color: white;
+    background-color: #14336d;
+}
+.month-visit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.month-heading{
+    text-align:center;
+    padding: 60px;
+}
+
+.month-visit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.months{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 80px;
+    row-gap: 10px;
+}
+.month{
+    height: 140px;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.month-image-container{
+    height: 70%;
+    overflow: hidden;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.month-image{
+    height: 100px;
+}
+.month-name{
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+.month-name a{
+    color: white;
+}
+.month-name a:hover{
+    color: rgba(255, 255, 255, 0.753);
 }
 #footer{
-    background-color: bisque;
-    height: 50vh;
+    background-color: #22b3c1;
+    height: 40vh;
+    color: white;
+}
+.foot1{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+.foot-button{
+    font-size: 17px;
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: all .5s;
+}
+.foot-button:hover{
+    color: #22b3c1;
+    background-color: white;
+}
+.foot2{
+    height: 10vh;
+    background-color: #2197a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
